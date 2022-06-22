@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Panel, Input } from '@zealous/ui'
+import { Panel, Input, InputType } from '@zealous/ui'
 
 const Layout = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export function LoginPage() {
   return (
     <Layout>
       <Panel>
-        <Input placeholder='email' />
+        <Input placeholder='email' type={InputType.EMAIL} />
       </Panel>
     </Layout>
   )
