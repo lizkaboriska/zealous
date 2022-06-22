@@ -23,3 +23,7 @@ export const themeSpacing = (space: keyof typeof defaultTheme['spacing']) => (
 export const themeBorderRadius = (size: keyof typeof defaultTheme['border']['radius']) => (
   fromTheme(theme => theme.border.radius[size])
 )
+
+export const themeTypography = (size: keyof typeof defaultTheme['typography']['fontSize']) => (
+  fromTheme(theme => theme.typography.fontSize[size])
+)

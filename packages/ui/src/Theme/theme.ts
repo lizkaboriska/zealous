@@ -18,6 +18,7 @@ export const defaultTheme = {
   color: {
     white: '#fff',
     black: '#000',
+    red: '#ff0000',
   },
   typography: {
     fontFamily: '"Roboto", sans-serif',
@@ -31,6 +32,7 @@ export const defaultTheme = {
     base: '16px',
     small: '12px',
     large: '24px',
+    extraSmall: '4px',
   },
   border: {
     radius: {

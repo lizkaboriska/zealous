@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { within, userEvent } from '@storybook/testing-library'
 import { Story, Meta, StoryObj } from '@storybook/react'
 
-import { Input, InputProps, INPUT_SELECTOR } from './Input'
+import { Input, InputProps, InputType, INPUT_SELECTOR } from './Input'
 
 type StoryType = StoryObj<InputProps>
 
@@ -41,5 +41,13 @@ export const Controlled: StoryType = {
       await canvas.findByTestId(INPUT_SELECTOR),
       'Hello World'
     )
+  }
+}
+
+export const Email: StoryType = {
+  name: 'Email',
+  args: {
+    value: 'hello@world.com',
+    type: InputType.EMAIL
   }
 }
